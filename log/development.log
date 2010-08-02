@@ -1,0 +1,370 @@
+# Logfile created on Tue Aug 03 01:06:11 +0530 2010  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:08:49) [GET]
+Rendering cvs/index
+Completed in 57ms (View: 55, DB: 0) | 200 OK [http://buildyourcv/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:29:56) [GET]
+
+ArgumentError (sandip.png not found):
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/images.rb:67:in `image'
+  app/controllers/cvs_controller.rb:11:in `index'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `instance_eval'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `initialize'
+  app/controllers/cvs_controller.rb:3:in `new'
+  app/controllers/cvs_controller.rb:3:in `index'
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (44.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:30:53) [GET]
+
+ArgumentError (sandip.png not found):
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/images.rb:67:in `image'
+  app/controllers/cvs_controller.rb:11:in `index'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `instance_eval'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `initialize'
+  app/controllers/cvs_controller.rb:3:in `new'
+  app/controllers/cvs_controller.rb:3:in `index'
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (35.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:30:57) [GET]
+
+ArgumentError (sandip.png not found):
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/images.rb:67:in `image'
+  app/controllers/cvs_controller.rb:11:in `index'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `instance_eval'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `initialize'
+  app/controllers/cvs_controller.rb:3:in `new'
+  app/controllers/cvs_controller.rb:3:in `index'
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (36.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:31:39) [GET]
+
+ArgumentError (images/sandip.png not found):
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/images.rb:67:in `image'
+  app/controllers/cvs_controller.rb:11:in `index'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `instance_eval'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `initialize'
+  app/controllers/cvs_controller.rb:3:in `new'
+  app/controllers/cvs_controller.rb:3:in `index'
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:32:02) [GET]
+
+ArgumentError (/images/sandip.png not found):
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/images.rb:67:in `image'
+  app/controllers/cvs_controller.rb:11:in `index'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `instance_eval'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `initialize'
+  app/controllers/cvs_controller.rb:3:in `new'
+  app/controllers/cvs_controller.rb:3:in `index'
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:32:05) [GET]
+
+ArgumentError (/images/sandip.png not found):
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/images.rb:67:in `image'
+  app/controllers/cvs_controller.rb:11:in `index'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `instance_eval'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `initialize'
+  app/controllers/cvs_controller.rb:3:in `new'
+  app/controllers/cvs_controller.rb:3:in `index'
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (114.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:32:30) [GET]
+
+NoMethodError (undefined method `table' for #<Prawn::Document:0xae5de18>):
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/graphics/color.rb:72:in `method_missing'
+  app/controllers/cvs_controller.rb:31:in `index'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `instance_eval'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `initialize'
+  app/controllers/cvs_controller.rb:3:in `new'
+  app/controllers/cvs_controller.rb:3:in `index'
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:32:55) [GET]
+
+NoMethodError (undefined method `table' for #<Prawn::Document:0xbfbfa6c>):
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/graphics/color.rb:72:in `method_missing'
+  app/controllers/cvs_controller.rb:31:in `index'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `instance_eval'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:238:in `initialize'
+  app/controllers/cvs_controller.rb:3:in `new'
+  app/controllers/cvs_controller.rb:3:in `index'
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:33:33) [GET]
+
+Errno::ENOENT (No such file or directory - sample/table.pdf):
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:379:in `initialize'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:379:in `open'
+  /usr/local/lib/ruby/gems/1.8/gems/prawn-core-0.8.4/lib/prawn/document.rb:379:in `render_file'
+  app/controllers/cvs_controller.rb:43:in `index'
+  passenger (2.2.14) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.14) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:441:in `start_request_handler'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:381:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/utils.rb:252:in `safe_fork'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:377:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.14) lib/phusion_passenger/railz/application_spawner.rb:222:in `start'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.14) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (120.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:34:44) [GET]
+Completed in 1446ms (View: 3, DB: 1) | 200 OK [http://buildyourcv/]
+Streaming file table.pdf
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CvsController#index (for 127.0.0.1 at 2010-08-03 01:42:53) [GET]
+Completed in 1442ms (View: 1, DB: 0) | 200 OK [http://buildyourcv/]
+Streaming file table.pdf
