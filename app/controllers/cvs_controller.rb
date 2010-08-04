@@ -40,8 +40,6 @@ class CvsController < ApplicationController
         :align => { 0 => :left, 1 => :right, 2 => :left, 3 => :right, 4 => :right }
 
     end
-    file = "#{RAILS_ROOT}/public/mycv.pdf"
-    pdf.render_file file
-    EmailMailer.deliver_email_with_attachment File.open(file)
+    EmailMailer.deliver_email_with_attachment pdf.render
   end
 end

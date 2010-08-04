@@ -1,7 +1,7 @@
 FEEDBACK_RECIPIENT = "'Sandip Ransing' <san2821@gmail.com>"
 SENDER_EMAIL = 
 class EmailMailer < ActionMailer::Base
-  def email_with_attachment(file)  
+  def email_with_attachment(data)  
     @headers = {content_type => 'text/html'}
     @sent_on = Time.now  
     @recipients = FEEDBACK_RECIPIENT
@@ -12,8 +12,8 @@ class EmailMailer < ActionMailer::Base
 
     # attach file
       attachment "application/octet-stream" do |a|  
-        a.body = file.read  
+        a.body = data 
         a.filename = "yourcv.pdf"
-      end if file.present?  
+      end if data.present?  
   end  
 end
