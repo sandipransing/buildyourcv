@@ -5,7 +5,7 @@ BuildYourCV
     - prawn (version 0.8.4)
 
 ### Models
-<img src='https://github.com/sandipransing/buildyourcv/raw/master/models.png' width='900'>
+<img src='https://github.com/sandipransing/buildyourcv/raw/master/models.png' width='500' align='center'>
 
 ### Migrations
     1. User
