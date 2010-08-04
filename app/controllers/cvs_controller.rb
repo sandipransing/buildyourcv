@@ -42,6 +42,6 @@ class CvsController < ApplicationController
     end
     file = "#{RAILS_ROOT}/public/mycv.pdf"
     pdf.render_file file
-    send_file file
+    EmailMailer.deliver_email_with_attachment File.open(file)
   end
 end
