@@ -1,5 +1,5 @@
 FEEDBACK_RECIPIENT = "san2821@gmail.com"
-SENDER_RECIPIENT = "san2821@gmail.com"
+SENDER_EMAIL = "san2821@gmail.com"
 class EmailMailer < ActionMailer::Base
   def email_with_attachment(data)  
     @headers = {content_type => 'text/html'}
