@@ -1,6 +1,6 @@
 require 'prawn/layout'
 class UsersController < ApplicationController
-  before_filter :access_required, :except => [:new, :create]
+  before_filter :access_required, :only => [:index, :destroy]
   # GET /users
   # GET /users.xml
   def index
