@@ -17,11 +17,52 @@ a {
 a:hover {
     color: #008ECB; text-decoration:none;
 }
-ul, li, h1 , h2 , h3 , h4, form, input, p{
+ul, li, h1 , h2 , h3 , h4, p{
     margin:0; padding:0;
     font-style:normal;
 }
 
+form { 
+  margin: 0 auto; 
+}
+form fieldset {
+  border: 1px solid #ac2d2d;
+}
+form fieldset legend {
+  font-weight: bold;
+  color: #ac2d2d;
+}
+form ol{
+  list-style-type:none;
+}
+form li {
+  margin:0;
+  padding:5px;
+}
+form label {
+  display:inline-block;
+  font-size:0.9em;
+  color: #ac2d2d;
+  font-weight:bold;
+  line-height:1.8;
+  vertical-align:top;
+  width:150px;
+}
+form .input_field {
+  height:25px;
+  width:300px;
+}
+form input, form textarea, form select {
+  border:1px solid #333;
+}
+form textarea {
+  height:120px;
+}
+.error {
+  color:red;
+  font-size:12px;
+  margin-left:150px;
+}
 h1{
     font-family:Verdana, Geneva, sans-serif;
     font-size:14px;
@@ -100,7 +141,7 @@ img{
     float:right;
     display:block;
 }
-input[type="submit"]{
+input[type="submit"], input[type="button"]{
     /*background:url(../images/button.png) left top no-repeat;*/
     border:1px solid #000;
     background-color: #ac2d2d;

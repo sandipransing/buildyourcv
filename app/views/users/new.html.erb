@@ -1,75 +1,29 @@
-<h1>New user</h1>
+<% form_for(@user, :builder => BYCForm) do |f| %>
+<fieldset>
+<legend>Please Enter necessary information</legend>
+<ol>
+  <%= f.text_field :name %>
+  <%= f.text_field :tagline %>
+  <%= f.text_field :email %>
+  <%= f.text_field :mobile %>
+  <%= f.text_field :languages %>
 
-<% form_for(@user) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :tagline %><br />
-    <%= f.text_field :tagline %>
-  </p>
-  <p>
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </p>
-  <p>
-    <%= f.label :mobile %><br />
-    <%= f.text_field :mobile %>
-  </p>
-  <p>
-    <%= f.label :languages %><br />
-    <%= f.text_field :languages %>
-  </p>
-  <p>
-    <%= f.label :summary %><br />
     <%= f.text_area :summary %>
-  </p>
-  <p>
-    <%= f.label :address %><br />
     <%= f.text_field :address %>
-  </p>
-  <p>
-    <%= f.label :landmark %><br />
     <%= f.text_field :landmark %>
-  </p>
-  <p>
-    <%= f.label :education %><br />
     <%= f.text_field :education %>
-  </p>
-  <p>
-    <%= f.label :website %><br />
     <%= f.text_field :website %>
-  </p>
-  <p>
-    <%= f.label :company %><br />
     <%= f.text_field :company %>
-  </p>
-  <p>
-    <%= f.label :designation %><br />
     <%= f.text_field :designation %>
-  </p>
-  <p>
-    <%= f.label :areas_of_speciality %><br />
     <%= f.text_field :areas_of_speciality %>
-  </p>
-  <p>
-    <%= f.label :birth_date %><br />
     <%= f.date_select :birth_date %>
-  </p>
-  <p>
-    <%= f.label :nationality %><br />
     <%= f.text_field :nationality %>
-  </p>
-  <p>
-    <%= f.label :interests %><br />
     <%= f.text_area :interests %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
+  <li>
+  <label><%= button_to_function 'Back &laquo;', "window.location.href='#{users_path}'" %></label>
+    
+    <%= f.submit 'Create &raquo;' %>
+  </li>
+  </ol>
+  </fieldset>
 <% end %>
-
-<%= link_to 'Back', users_path %>
