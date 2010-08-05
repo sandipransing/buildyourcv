@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	before_filter :access_required, :except => [:new, :create]
   # GET /users
   # GET /users.xml
   def index
@@ -80,4 +81,10 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  private
+  def access_required
+	  flash[:error] = "You do not have access to view this page"
+	  redirect_to :action => :new
+	  end
 end

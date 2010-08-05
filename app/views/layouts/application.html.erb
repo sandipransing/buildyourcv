@@ -19,6 +19,16 @@
   		<div id="leftcol1">
 </div>
 <div id="rightcol1">
+          <% if flash[:notice].present?%>
+            <div id='flash' class="flash_notice">
+              <%= flash[:notice] %><% flash[:notice] = '' %>
+            </div>
+          <%end%>
+          <% if flash[:error].present?%>
+            <div id='flash' class="flash_error">
+              <%= flash[:error] %><% flash[:error] = '' %>
+            </div>
+          <%end%>
 <%=yield%>
     </div>
   <div id="vline1"></div>

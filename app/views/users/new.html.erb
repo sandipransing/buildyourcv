@@ -22,7 +22,8 @@
   <li>
   <label><%= button_to_function 'Back &laquo;', "window.location.href='#{users_path}'" %></label>
     
-    <%= f.submit 'Create &raquo;' %>
+    <%= f.submit 'Email &raquo;', :name => :email %>
+    <%= f.submit 'Export &raquo;', :name => :export %>
   </li>
   </ol>
   </fieldset>
