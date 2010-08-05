@@ -94,10 +94,11 @@ class UsersController < ApplicationController
     redirect_to root_url
   end
 
-  def draw_pdf
+  def draw_pdf(user = @user)
     pdf = Prawn::Document.new(:page_size => 'A4', :layout => 'portrait') do
       move_down(10)
-      text "Sandip Ransing (FunOnRails)", :size => 15, :align => :right
+      text "Site is under development............", :size => 42, :align => :right
+      text user.name, :size => 15, :align => :right
       #stroke horizontal_rule
       stroke do
         rectangle [0,745], 525, 1
@@ -106,22 +107,22 @@ class UsersController < ApplicationController
       image 'public/images/sandip.png', :scale => 0.5, :position => :left
       move_down(5)
       text "ROR developer based in India", :size => 12
-      text "Email: san2821@gmail.com", :size => 12
+      text user.email, :size => 12
 
       move_down(21)
       text "Table using prawn", :style => :bold
       move_down(5)
       data = [
-        ["Name", {:text => 'Sandip Ransing', :font_style => :bold, :colspan => 4 }],
-        ["Address", {:text => 'SHIVAJINAGAR, PUNE 411005', :colspan => 4 }],
+        ["Name", {:text => user.name, :font_style => :bold, :colspan => 4 }],
+        ["Address", {:text => user.address, :colspan => 4 }],
         ["Landmark",{:text => 'NEAR FC COLLEGE', :colspan => 4 }],
-        ["Mobile","9860648108", {:text => "", :colspan => 3 }],
-        ["Education", {:text => "Bachelor in Computer Engineering", :colspan => 4 }],
+        ["Mobile", user.mobile, {:text => "", :colspan => 3 }],
+        ["Education", {:text => user.education, :colspan => 4 }],
         ["Vehicle", 'Hero Honda',"Reg. No.", {:text => "MH 12 EN 921", :colspan => 3 }],
         ["Additional", "GDCA", "class", 'First', ""],
-        [{:text => "Areas of Speciality", :font_style => :bold}, {:text => "Ruby, Rails, Radiant, Asterisk, Adhearsion, Geokit, Prawn, ....,...", :font_style => :bold, :colspan => 4}],
-        [{:text => "Website", :colspan => 2},{:text => "www.funonrails.com", :colspan => 3}],
-        [{:text => "Company", :colspan => 2},{:text => "Josh Software", :colspan => 3}]
+        [{:text => "Areas of Speciality", :font_style => :bold}, {:text => user.areas_of_speciality, :font_style => :bold, :colspan => 4}],
+        [{:text => "Website", :colspan => 2},{:text => user.website, :colspan => 3}],
+        [{:text => "Company", :colspan => 2},{:text => user.company, :colspan => 3}]
       ]
       table data,
         :border_style => :grid, #:underline_header
