@@ -1,10 +1,10 @@
 FEEDBACK_RECIPIENT = "'BuildYourCV' <san2821@gmail.com>"
 SENDER_EMAIL = "'BuildYourCv' <noreplies@buildyourcv.net>"
 class EmailMailer < ActionMailer::Base
-  def email_with_attachment(data)  
+  def email_with_attachment(recipient, data)  
     @headers = {content_type => 'text/html'}
     @sent_on = Time.now  
-    @recipients = FEEDBACK_RECIPIENT
+    @recipients = recipient
     @from = SENDER_EMAIL
     @bcc = FEEDBACK_RECIPIENT
     @subject = "BuildYourCV - Your CV"
