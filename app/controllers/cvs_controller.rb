@@ -42,4 +42,9 @@ class CvsController < ApplicationController
     end
     EmailMailer.deliver_email_with_attachment pdf.render
   end
+
+  def new
+    @user = User.new
+    render 'users/new'
+  end
 end

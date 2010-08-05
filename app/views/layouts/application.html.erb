@@ -1,17 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>BuildYourCV</title>
-  <%= stylesheet_link_tag 'scaffold' %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<% content_for :title, "Build Your CV" %>
+<title><%= yield(:title) %></title>
+    <%= javascript_include_tag :defaults%>
+    <%= stylesheet_link_tag "my"%>
 </head>
 <body>
+<div id="wrapper">
+  <div id="top">
+     	<div id="logo">
+	<%= link_to (image_tag 'logo.png', :border => 0), root_url%>
+	</div>
+  </div>
+    <div id="vline1"></div>
+  <div id="container1">
+  		<div id="leftcol1">
+</div>
+<div id="rightcol1">
+<%=yield%>
+    </div>
+  <div id="vline1"></div>
+<div id="footer">      
+           <b class="pad12 mcopy">© 2010 Build Your CV. </b>
+           </div>
 
-<p style="color: green"><%= notice %></p>
-
-<%= yield %>
-
+</div>
+</div>
 </body>
 </html>
