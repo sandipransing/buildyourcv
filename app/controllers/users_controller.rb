@@ -104,25 +104,40 @@ class UsersController < ApplicationController
         rectangle [0,745], 525, 1
       end
       move_down(1)
-      image 'public/images/sandip.png', :scale => 0.5, :position => :left
+      # Image
+      #image 'public/images/sandip.png', :scale => 0.5, :position => :left
+      require "open-uri"
+      begin
+        image open(user.photo_url), :height => 100, :position => :left
+      rescue
+      end if user.photo_url
+      
       move_down(5)
-      text "ROR developer based in India", :size => 12
+      
+      text user.tagline, :size => 12
       text user.email, :size => 12
 
       move_down(21)
-      text "Table using prawn", :style => :bold
+      # Summary here
+      text "Summary", :style => :bold
+      text user.summary
+      
+      move_down(21)
+      text "Personal Details", :style => :bold
+      
       move_down(5)
       data = [
         ["Name", {:text => user.name, :font_style => :bold, :colspan => 4 }],
         ["Address", {:text => user.address, :colspan => 4 }],
-        ["Landmark",{:text => 'NEAR FC COLLEGE', :colspan => 4 }],
-        ["Mobile", user.mobile, {:text => "", :colspan => 3 }],
+        ["Mobile", {:text => user.mobile, :colspan => 4 }],
+        ["Birth Date", {:text => user.designation, :colspan => 4 }],
+        ["Nationality", {:text => user.nationality, :colspan => 4 }],
         ["Education", {:text => user.education, :colspan => 4 }],
-        ["Vehicle", 'Hero Honda',"Reg. No.", {:text => "MH 12 EN 921", :colspan => 3 }],
-        ["Additional", "GDCA", "class", 'First', ""],
+        ["Languages", {:text => user.languages, :colspan => 4 }],
         [{:text => "Areas of Speciality", :font_style => :bold}, {:text => user.areas_of_speciality, :font_style => :bold, :colspan => 4}],
-        [{:text => "Website", :colspan => 2},{:text => user.website, :colspan => 3}],
-        [{:text => "Company", :colspan => 2},{:text => user.company, :colspan => 3}]
+        [{:text => "Website"},{:text => user.website, :colspan => 4}],
+        [{:text => "Designation"},{:text => user.designation, :colspan => 4}],
+        [{:text => "Company"},{:text => user.company, :colspan => 4}]
       ]
       table data,
         :border_style => :grid, #:underline_header
@@ -132,8 +147,12 @@ class UsersController < ApplicationController
         :border_width => 0.7,
         :column_widths => { 0 => 130, 1 => 100, 2 => 100, 3 => 100, 4 => 80 },
         :position => :left,
-        :align => { 0 => :left, 1 => :right, 2 => :left, 3 => :right, 4 => :right }
-
+        :align => { 0 => :left, 1 => :left, 2 => :left, 3 => :right, 4 => :right }
+      if user.interests
+        move_down(5)
+        text "Interests", :style => :bold
+        text user.interests
+      end
     end
     pdf.render
   end

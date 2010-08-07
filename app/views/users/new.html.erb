@@ -2,10 +2,12 @@
 <fieldset>
 <legend>Please Enter necessary information</legend>
 <ol>
+  
   <%= f.text_field :name, :required => :all %>
   <%= f.text_field :tagline, :required => :all %>
   <%= f.text_field :email, :required => :all %>
   <%= f.text_field :mobile %>
+  <%= f.text_field :photo_url %>
   <%= f.text_field :languages %>
 
     <%= f.text_area :summary, :required => :all %>
