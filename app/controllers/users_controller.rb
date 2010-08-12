@@ -97,7 +97,7 @@ class UsersController < ApplicationController
   def draw_pdf(user = @user)
     pdf = Prawn::Document.new(:page_size => 'A4', :layout => 'portrait') do
       move_down(10)
-      text "Site is under development............", :size => 42, :align => :right
+      #text "Site is under development............", :size => 42, :align => :right
       text user.name, :size => 15, :align => :right
       #stroke horizontal_rule
       stroke do
